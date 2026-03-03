@@ -1,0 +1,16 @@
+# Archivos temporales de Sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de editores
+.vscode/
+.idea/
+
+# Temporales de diseño y tesis
+*.log
+*.tmp
+*.bak
+
+# Si usas algún entorno de desarrollo
+node_modules/
+.env
