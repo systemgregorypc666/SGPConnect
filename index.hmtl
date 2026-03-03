@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGP Connect | System Gregory PC LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-cyan: #00f2ff;
+            --deep-blue: #000a1a;
+            --panel-blue: rgba(0, 30, 60, 0.7);
+            --text-silver: #c4d1e0;
+        }
+
+        * { box-sizing: border-box; transition: all 0.3s ease; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--deep-blue);
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Navegación de Alta Gama */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 10, 26, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--neon-cyan);
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav a:hover {
+            color: white;
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        /* Header con Efecto de Poder */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #001e3c 0%, #000a1a 100%);
+            padding: 20px;
+        }
+
+        .logo-main {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            color: var(--neon-cyan);
+            margin: 0;
+            text-shadow: 0 0 30px rgba(0, 242, 255, 0.4);
+        }
+
+        .slogan {
+            font-size: 1.2rem;
+            color: var(--text-silver);
+            margin-top: 10px;
+            letter-spacing: 5px;
+        }
+
+        /* Secciones */
+        section {
+            padding: 100px 10% 60px;
+            min-height: 80vh;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            border-left: 5px solid var(--neon-cyan);
+            padding-left: 15px;
+            color: var(--neon-cyan);
+            margin-bottom: 40px;
+        }
+
+        /* Tarjetas de Productos y Servicios */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--panel-blue);
+            border: 1px solid rgba(0, 242, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border-color: var(--neon-cyan);
+            transform: translateY(-5px);
+            background: rgba(0, 40, 80, 0.8);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: var(--neon-cyan);
+            color: var(--deep-blue);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        /* Pie de Página */
+        footer {
+            background: #000;
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+            color: #555;
+        }
+
+        .highlight { color: var(--neon-cyan); }
+
+        @media (max-width: 768px) {
+            .logo-main { font-size: 2.5rem; }
+            nav { flex-wrap: wrap; }
+            nav a { margin: 5px 10px; font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#principal">Principal</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="#pedidos">Pedidos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <header id="principal">
+        <h1 class="logo-main">SGP CONNECT</h1>
+        <p class="slogan">SYSTEM GREGORY PC LLC</p>
+        <p style="max-width: 600px; color: var(--text-silver);">
+            Liderando la investigación en <span class="highlight">Biotecnología</span> y conectividad global mediante <span class="highlight">Chips Virtuales eSIM</span>.
+        </p>
+    </header>
+
+    <section id="servicios">
+        <h2>Servicios de Ingeniería</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Electrónica Aplicada</h3>
+                <p>Diseño de prototipos, temporizadores y sistemas digitales para tesis de grado.</p>
+            </div>
+            <div class="card">
+                <h3>Scanner.exe</h3>
+                <p>Auditoría de sistemas y limpieza de hardware con protocolos de alta eficiencia.</p>
+            </div>
+            <div class="card">
+                <h3>Inteligencia Bodegalicia</h3>
+                <p>Algoritmos avanzados para monitoreo biotecnológico y salud.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>eSIM Global</h3>
+                <p>Chip virtual con datos ilimitados. Activación vía QR en minutos.</p>
+                <a href="#pedidos" class="btn">Comprar</a>
+            </div>
+            <div class="card">
+                <h3>Physical SIM SGP</h3>
+                <p>Tarjeta física de alta resistencia con cobertura nacional e internacional.</p>
+                <a href="#pedidos" class="btn">Solicitar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pedidos">
+        <h2>Pedidos y Facturación</h2>
+        <div class="card" style="width: 100%; max-width: 600px; margin: 0 auto; text-align: center;">
+            <p>Sistema de gestión comercial encriptado.</p>
+            <p><strong>Valor por acción: $2,000 USD</strong></p>
+            <p class="highlight">Aceptamos Pagos Internacionales y Criptoactivos.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto del Director</h2>
+        <div class="grid">
+            <div class="card">
+                <p><strong>Director Jefe:</strong> José Gregorio Hernández C.</p>
+                <p><strong>Sede:</strong> Sector 58m², San Cristóbal, Táchira.</p>
+                <p><strong>Email:</strong> <span class="highlight">systemgregoryp.c@gmail.com</span></p>
+                <p><strong>WhatsApp:</strong> 0416 11 77334</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 System Gregory PC LLC. Todos los derechos reservados.</p>
+        <p><i>Propiedad Intelectual protegida para el legado de Alicia. Mente Positiva.</i></p>
+    </footer>
+
+</body>
+</html>
