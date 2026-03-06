@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGP Connect | chip internacional su tienda en linea  </title>
+    <title>SGP Connect | chip internacional su tienda en linea </title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -129,6 +129,12 @@
             font-size: 0.8rem;
         }
 
+        /* Estilo para el contenedor de PayPal */
+        #paypal-container-T96D3T6S6K9NW {
+            margin-top: 25px;
+            min-height: 150px;
+        }
+
         /* Pie de Página */
         footer {
             background: #000;
@@ -204,8 +210,20 @@
         <div class="card" style="width: 100%; max-width: 600px; margin: 0 auto; text-align: center;">
             <p>Sistema de gestión comercial encriptado.</p>
             <p><strong>Valor por el chip: $80 USD</strong></p>
-            <p class="highlight">Aceptamos Pagos Internacionales, paypal y Criptoactivos.</p>
-        </div>
+            <p class="highlight">Aceptamos Pagos Internacionales, PayPal y Criptoactivos.</p>
+            
+            <div id="paypal-container-T96D3T6S6K9NW"></div>
+
+            <script 
+              src="https://www.paypal.com/sdk/js?client-id=BAApax2HPz958-_joLngtt1BsX5ofYox-d1_GAV2m8kFak__xQaOpx070FCxrEkjIAuGMzNAwFXMxs7-Bk&components=hosted-buttons&disable-funding=venmo&currency=USD">
+            </script>
+
+            <script>
+              paypal.HostedButtons({
+                hostedButtonId: "T96D3T6S6K9NW",
+              }).render("#paypal-container-T96D3T6S6K9NW");
+            </script>
+            </div>
     </section>
 
     <section id="contacto">
